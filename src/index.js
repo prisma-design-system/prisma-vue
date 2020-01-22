@@ -23,7 +23,7 @@ export default {
           // define $pr reactive properties
           this.$pr = Vue.observable(options)
           // define $pr functions
-          prFunctions(this)
+          // prFunctions(this)
         }
       },
       mounted () {
