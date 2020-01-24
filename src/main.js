@@ -6,6 +6,5 @@ Vue.config.productionTip = false
 Vue.use(Prisma)
 
 new Vue({
-  components: { Prisma },
   render: h => h(App)
 }).$mount('#app')

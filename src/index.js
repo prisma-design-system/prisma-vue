@@ -1,6 +1,7 @@
 import * as prComponents from './components'
+import prTheme from './utils/theme.js'
 import { injectDirectionClass } from './utils/rtl'
-// import prisma from './components/prisma'
+import prFunctions from './functions'
 
 export default {
   install (Vue, options) {
@@ -8,6 +9,16 @@ export default {
     Object.values(prComponents).forEach(prComponent => {
       Vue.use(prComponent)
     })
+
+    if (options) {
+      if (options.hasOwnProperty('theme')) {
+        if (options.theme.hasOwnProperty('colors')) {
+          if (typeof window !== 'undefined') {
+            prTheme.prfunction(options.theme.colors, options.server)
+          }
+        }
+      }
+    }
 
     Vue.mixin({
       watch: {
@@ -23,7 +34,7 @@ export default {
           // define $pr reactive properties
           this.$pr = Vue.observable(options)
           // define $pr functions
-          // prFunctions(this)
+          prFunctions(this)
         }
       },
       mounted () {
