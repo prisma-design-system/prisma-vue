@@ -2,12 +2,11 @@
 
 > Vue UI library based on Prisma Design System
 
-
 [![NPMVERSION](https://img.shields.io/npm/v/@prisma/vue.svg)](http://npmjs.com/package/@prisma/vue) [![GITHUBSTARS](https://img.shields.io/github/stars/prisma-design-system/prisma-vue.svg)](https://github.com/prisma-design-system/prisma-vue/stargazers) [![BUILD](https://travis-ci.org/prisma-design-system/prisma-vue.svg?branch=master)](https://travis-ci.org/prisma-design-system/prisma-vue) [![DOWNLOADS](https://img.shields.io/npm/dt/@prisma/vue.svg)](https://npmjs.com/package/@prisma/vue)
 
 ## Installation
 
-``` bash
+```bash
 # Install with npm
 $ npm install --save @prisma/vue
 
@@ -15,10 +14,9 @@ $ npm install --save @prisma/vue
 $ yarn add @prisma/vue
 ```
 
-
 ## Usage
 
-``` vue
+```vue
 <template>
   <div class="app">
     <prisma v-model="data"/>
@@ -38,14 +36,13 @@ $ yarn add @prisma/vue
 
 ## Properties
 
-* `blend-mode` **[String]**
+-   `blend-mode` **[String]**
 
-  Optional; `difference` by defualt. The blend mode.
-
+    Optional; `difference` by defualt. The blend mode.
 
 ## License
 
-```
+```markdown
 The MIT License (MIT)
 
 Copyright (c) 2020 Ivan Sotelo Vargas
