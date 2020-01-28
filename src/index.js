@@ -1,5 +1,6 @@
 import * as prComponents from './components'
 import prTheme from './utils/theme.js'
+import './style/prisma.styl'
 import { injectDirectionClass } from './utils/rtl'
 import prFunctions from './functions'
 

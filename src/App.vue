@@ -1,15 +1,10 @@
 <template lang="pug">
   #app
-    prisma
 </template>
 
 <script>
-import { prisma } from './index'
 export default {
-  name: 'App',
-  components: {
-    prisma
-  }
+  name: 'App'
 }
 </script>
 <style lang="stylus">
