@@ -54,13 +54,13 @@
     "vue.js"
   ],
   "devDependencies": {
-    "@babel/core": "^7.6.4",
+    "@babel/core": "^7.8.3",
     "@commitlint/cli": "^7.6.1",
     "@commitlint/config-conventional": "^7.6.0",
-    "@storybook/addon-actions": "^5.3.7",
-    "@storybook/addon-links": "^5.3.7",
-    "@storybook/addons": "^5.3.7",
-    "@storybook/vue": "^5.3.7",
+    "@storybook/addon-actions": "^5.3.9",
+    "@storybook/addon-links": "^5.3.9",
+    "@storybook/addons": "^5.3.9",
+    "@storybook/vue": "^5.3.9",
     "@vue/cli-plugin-babel": "^4.0.0",
     "@vue/cli-plugin-e2e-nightwatch": "^4.0.0",
     "@vue/cli-plugin-eslint": "^4.0.0",
