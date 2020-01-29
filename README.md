@@ -14,32 +14,6 @@ $ npm install --save @prisma/vue
 $ yarn add @prisma/vue
 ```
 
-## Usage
-
-```vue
-<template>
-  <div class="app">
-    <prisma v-model="data"/>
-  </div>
-</template>
-
-<script>
-  import prisma from 'prisma';
-  export default {
-    name: 'demo',
-    components: {
-      prisma
-    }
-  };
-</script>
-```
-
-## Properties
-
--   `blend-mode` **[String]**
-
-    Optional; `difference` by defualt. The blend mode.
-
 ## License
 
 ```markdown

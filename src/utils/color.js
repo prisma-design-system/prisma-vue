@@ -3,9 +3,9 @@ export default {
     var f = color.split(',')
     var t = percent < 0 ? 0 : 255
     var p = percent < 0 ? percent * -1 : percent
-    var R = parseInt(f[0].slice(4))
-    var G = parseInt(f[1])
-    var B = parseInt(f[2])
+    var R = parseInt(f[0].slice(4), 10)
+    var G = parseInt(f[1], 10)
+    var B = parseInt(f[2], 10)
     return (
       'rgb(' +
       (Math.round((t - R) * p) + R) +
