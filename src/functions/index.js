@@ -14,14 +14,7 @@ const prFunctions = {
   // prDialog
 }
 
-export default vm => {
-  Object.values(prFunctions).forEach(prFunctions => {
-    if (prFunctions.hasOwnProperty('subName')) {
-      vm.$pr[prFunctions.name][prFunctions.subName] = prFunctions.prfunction
-    } else {
-      vm.$pr[prFunctions.name] = prFunctions.prfunction
-    }
-  })
-
+export default Vue => {
   // vm.$pr.loading.close = prLoading.close
+  Vue.prototype.$pr = prFunctions
 }
