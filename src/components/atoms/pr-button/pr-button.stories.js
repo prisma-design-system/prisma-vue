@@ -1,21 +1,21 @@
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 
-import MyButton from './MyButton'
+import PrButton from './pr-button'
 
 export default {
   title: 'Button',
-  component: MyButton
+  component: PrButton
 }
 
 export const Text = () => ({
-  components: { MyButton },
+  components: { PrButton },
   template: '<my-button @click="action">Hello Button</my-button>',
   methods: { action: action('clicked') }
 })
 
 export const Jsx = () => ({
-  components: { MyButton },
+  components: { PrButton },
   render (h) {
     return <my-button onClick={this.action}>With JSX</my-button>
   },
@@ -23,7 +23,7 @@ export const Jsx = () => ({
 })
 
 export const Emoji = () => ({
-  components: { MyButton },
+  components: { PrButton },
   template: '<my-button @click="action">😀 😎 👍 💯</my-button>',
   methods: { action: action('clicked') }
 })

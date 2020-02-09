@@ -1,6 +1,5 @@
 import prTheme from './utils/theme.js'
 import './style/prisma.styl'
-import { injectDirectionClass } from './utils/rtl'
 import prFunctions from './functions'
 
 const ctx = require.context('./components/', true, /^(?!.*(?:\/_|-story\.vue|-test\.vue)).*\.vue$/)
@@ -22,29 +21,7 @@ export default {
         }
       }
     }
-
-    Vue.mixin({
-      watch: {
-        '$pr.rtl': {
-          handler (val) {
-            injectDirectionClass(val)
-          }
-        }
-      },
-      beforeCreate () {
-        // create $pr property if not exist
-        if (!this.$pr) {
-          // define $pr reactive properties
-          this.$pr = Vue.observable(options)
-          // define $pr functions
-          prFunctions(this)
-        }
-      },
-      mounted () {
-        // inject the direction class for the initial options
-        injectDirectionClass(this.$pr.rtl)
-      }
-    })
+    prFunctions(Vue)
   }
 }
 
