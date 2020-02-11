@@ -14,6 +14,11 @@ export default {
 
     if (options) {
       if (options.hasOwnProperty('theme')) {
+        if (options.theme.hasOwnProperty('mode')) {
+          if (options.theme.mode !== 'lighten') {
+            prTheme.change(options.theme.mode, options.server)
+          }
+        }
         if (options.theme.hasOwnProperty('colors')) {
           if (typeof window !== 'undefined') {
             prTheme.prfunction(options.theme.colors, options.server)
