@@ -30,4 +30,4 @@ export default {
   }
 }
 
-export { prButton } from './components/atoms/pr-button'
+export { PrButton } from './components/atoms/pr-button'
